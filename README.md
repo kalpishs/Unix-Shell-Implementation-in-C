@@ -3,11 +3,17 @@
 ============================================================================================================================================ 
 This program simulates the working of command line interface in Unix-like environment. Implemented Functionalities are as under:
 1. Execute all the External commands (ls, clear, vi etc.)
+
 2. Implement Internal commands: cd, pwd
+
 3. Initialize and use environment variables
+
 4. Print environment variables using echo command
+
 5. Redirection operators: STDIN, STDOUT, STDERR (>>,>,<<,<,2>) 
+
 6. Support for history command and '!' operator (history, !!, !-1, !10,!-10 etc)
+
 7. Pipes “|” (multiple) (Ex: ls | grep 'a' | wc)
 
 
@@ -50,10 +56,15 @@ static int command(int input, int first, int last, char *cmd_exec):
 
 this does the major part of the program. It  checks for various possibilities of commands. The types of commands that are checked are as under:
 1) Internal commands: pwd and cd
+
 2) echo commands, setting and getting environment variables
+
 3) redirection handler 
+
 4) PIPE
+
 5) External commands
+
 it make use of various funtions like tokenise_redirect_input_output,tokenise_redirect_input,tokenise_redirect_output which internally calls tokenise_commands() for tokenization
 
 

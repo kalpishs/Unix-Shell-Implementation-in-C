@@ -1,7 +1,8 @@
-============================================================================================================================================ 
+===========================================================================================================================
                      UNIX SHELL IMPLEMENTATION IN C
-============================================================================================================================================ 
+=========================================================================================================================== 
 This program simulates the working of command line interface in Unix-like environment. Implemented Functionalities are as under:
+
 1. Execute all the External commands (ls, clear, vi etc.)
 
 2. Implement Internal commands: cd, pwd
@@ -17,9 +18,9 @@ This program simulates the working of command line interface in Unix-like enviro
 7. Pipes “|” (multiple) (Ex: ls | grep 'a' | wc)
 
 
-============================================================================================================================================ 
+===========================================================================================================================
                           Input/Output Format
-============================================================================================================================================ 
+===========================================================================================================================
 
 Input from the 'stdin' in an infinite loop till an “exit” is entered.
 The corresponding output should be printed to 'stdout'.
@@ -38,9 +39,9 @@ Bye...
 bash prompt:~$
 
 
-============================================================================================================================================ 
+===========================================================================================================================
                          Implementation Details
-============================================================================================================================================ 
+=========================================================================================================================== 
 
 The shell.c contains the main function which takes the input from user and checks it for pipeline. If pipeline exist it processes the data separately else it passes the data to the functions. 
 
@@ -55,6 +56,7 @@ This function is responsible for splitting of command and passing it to command 
 static int command(int input, int first, int last, char *cmd_exec):
 
 this does the major part of the program. It  checks for various possibilities of commands. The types of commands that are checked are as under:
+
 1) Internal commands: pwd and cd
 
 2) echo commands, setting and getting environment variables
@@ -70,10 +72,15 @@ it make use of various funtions like tokenise_redirect_input_output,tokenise_red
 
 Helper functions:
 getcwd():
+
 gets the current woring Directory
+
 signal():
+
 Handle Interrupt Signal
+
 void prompt():
+
 initiates new Promt 
 
 

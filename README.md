@@ -27,15 +27,23 @@ The corresponding output should be printed to 'stdout'.
 
 Ex:
 assume that PWD==home/user
+
 Shell name: My_Shell
+
 bash prompt:~$ ./a.out
 
 My_Shell:/home/user$ ls
+
 shell.c history.txt a.out
+
 My_Shell:/home/user$ gfhj
+
 gfhj: command not found
+
 My_Shell:/home/user$ exit
+
 Bye...
+
 bash prompt:~$
 
 

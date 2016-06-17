@@ -1,8 +1,6 @@
 /* 
 Name        :   Kalpish Singhal
-Roll No     :   201505513 
-Branch      :   CSE
-*********************************************************************************
+******************************************************************************
 FUNCTIONALITIES IMPLEMENTED-
 1. Execute all the External commands (ls, clear, vi etc.)
 2. Implement Internal commands: cd, pwd
